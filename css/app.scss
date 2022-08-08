@@ -1,0 +1,63 @@
+
+$font-family-sans-serif:'Montserrat', sans-serif;
+$nav-link-font-weight: bold;
+$navbar-nav-link-padding-x:1rem;
+$btn-padding-x-lg:2rem;
+//@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/animate.css/animate.min.css";
+@import "../node_modules/venobox/dist/venobox.min.css";
+@import "../node_modules/slick-carousel/slick/slick.css";
+@import "../node_modules/slick-carousel/slick/slick-theme.css";
+@import "../node_modules/wow.js/css/libs/animate.css";
+
+
+
+*{
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background: white;
+  scroll-behavior: smooth;
+}
+
+.site-header{
+  z-index: 1005;
+  background-color: #ffffffe8 !important;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.about-row{
+  padding: 150px 0;
+}
+.home-row{
+  padding-top: 90px;
+}
+
+.scroll-to-top{
+  bottom: 50px;
+  right: 50px;
+}
+
+.site-header .nav-link.active{
+  background-color: var(--bs-success);
+  color: $white !important;
+  border-radius: 0.25rem;
+}
+
+.gallery{
+  columns: 150px 3;
+}
+
+.gallery img{
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.slick-prev::before,.slick-next::before{
+  color: $success;
+}
